@@ -1,0 +1,346 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*membuat style pada header */
+.header{
+    background-color:rgb(139, 178, 154);
+    padding: 20px;
+    text-align: center;
+}
+/*membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: lightgreen;
+}
+/*membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: lemonchiffon;
+    color: brown;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+/* membuat style pada column kanan-kiri */
+.column.side{
+    width:25%
+}
+/* membuat style pada columnn tengah */
+.column.middle{
+    width:50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+.footer{
+    background-color:antiquewhite;
+    padding: 10px;
+    text-align: center;
+}
+/*style biodata*/
+body {
+    font-family: Moonlit, modern handwritten slab serif;
+    margin: 0;
+    text-align: center;
+    background-image: url(background_2.jpg);
+    background: cover;
+background-repeat: repeat;
+background-attachment: fixed;
+}
+
+h2 {
+    background:pink;
+    color:rgb(110, 65, 65);
+    font-size:28px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+h1 {
+    display: inline-block;
+    background: rgb(139, 178, 154);
+    color: rgb(249, 242, 242);
+    padding: 15x 20px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 10px 10px 10 px 10px;
+    margin-top: 25px;
+}
+
+.header{
+    transition: transform 0.5s ease;
+}
+
+.header:hover{
+    color:purple;
+    text-shadow: 0 0 20px white;
+    transform:scale(1.1);
+}
+
+.header span {
+    background:cyan;
+    padding: 10px 20px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: -5px;
+    color:coral
+}
+
+.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background: rgb(232, 162, 162);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.isi {
+    text-align: left;
+    flex: 1;
+}
+
+.isi p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid whitesmoke
+}
+
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform o.5 ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+div.Fandom{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;  
+}
+
+div.MD{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.MD:hover{
+    transform: scale(1.1);
+}
+div.MD img{
+    width: 150px;   
+}
+
+div.Deltarune{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.Deltarune:hover{
+    transform: scale(1.1);
+}
+div.Deltarune img{
+    width: 150px; 
+}
+
+div.CRK{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.CRK:hover{
+    transform: scale(1.1);
+}
+div.CRK img{
+    width: 150px;
+}
+
+div.Peanuts{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.Peanuts:hover{
+    transform: scale(1.1);
+}
+div.Peanuts img{
+    width: 150px;
+}
+
+div.Snack Favorit{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;  
+}
+
+div.SG{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.SG:hover{
+    transform: scale(1.1);
+}
+div.SG img{
+    width: 150px;   
+}
+
+div.WCS{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.WCS:hover{
+    transform: scale(1.1);
+}
+div.WCS img{
+    width: 150px; 
+}
+
+div.CCB{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.CCB:hover{
+    transform: scale(1.1);
+}
+div.CCB img{
+    width: 150px;
+}
+
+div.Kitab Suci{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 14px;
+    width: 100%;  
+}
+
+div.Psalm{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.Psalm:hover{
+    transform: scale(1.1);
+}
+div.Psalm img{
+    width: 150px;   
+}
+
+div.Ephesians{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.Ephesians:hover{
+    transform: scale(1.1);
+}
+div.Ephesians img{
+    width: 150px; 
+}
+
+div.Luke{
+   padding: 8px 16px;
+   align-items: center;
+   position: relative;
+   transition: transform 0.3s ease;
+}
+
+div.Luke:hover{
+    transform: scale(1.1);
+}
+div.Luke img{
+    width: 150px;
+}

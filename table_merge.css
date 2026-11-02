@@ -1,0 +1,12 @@
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 75%;
+}
+th{
+    text-align:center;
+    height: 60 px;
+    background-color:antiquewhite;
+}
